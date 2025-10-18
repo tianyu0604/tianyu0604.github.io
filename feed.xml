@@ -1,34 +1,127 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://ty.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ty.github.io/" rel="alternate" type="text/html" hreflang="zh-CN" /><updated>2025-10-18T04:25:39+08:00</updated><id>https://ty.github.io/feed.xml</id><title type="html">tjoy blog</title><subtitle>day day up.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="https://ty.github.io/jekyll/update/2025/10/17/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2025-10-17T03:10:00+08:00</published><updated>2025-10-17T03:10:00+08:00</updated><id>https://ty.github.io/jekyll/update/2025/10/17/welcome-to-jekyll</id><content type="html" xml:base="https://ty.github.io/jekyll/update/2025/10/17/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
-<p>Jekyll requires blog post files to be named according to the following format:</p>
 
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>/</id>
+  <title>Chirpy</title>
+  <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
+  <updated>2025-10-19T03:42:47+08:00</updated>
+  <author>
+    <name>your_full_name</name>
+    <uri>/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="/"/>
+  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
+  <rights> © 2025 your_full_name </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+  
+  <entry>
+    <title>Customize the Favicon</title>
+    <link href="/posts/customize-the-favicon/" rel="alternate" type="text/html" title="Customize the Favicon" />
+    <published>2019-08-11T00:34:00+08:00</published>
+  
+    <updated>2019-08-11T00:34:00+08:00</updated>
+  
+    <id>/posts/customize-the-favicon/</id>
+    <content type="text/html" src="/posts/customize-the-favicon/" />
+    <author>
+      <name>cotes</name>
+    </author>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+  
+    
+    <category term="Blogging" />
+    
+    <category term="Tutorial" />
+    
+  
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">Hello World</title><link href="https://ty.github.io/tutorial/2025/04/05/my-first-blog-post.html" rel="alternate" type="text/html" title="Hello World" /><published>2025-04-05T10:00:00+08:00</published><updated>2025-04-05T10:00:00+08:00</updated><id>https://ty.github.io/tutorial/2025/04/05/my-first-blog-post</id><content type="html" xml:base="https://ty.github.io/tutorial/2025/04/05/my-first-blog-post.html"><![CDATA[<p>这是我的第一篇博客文章！</p>
+  <summary>The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons.  Generate the favicon  Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and then go to the online tool Real Favicon Generator and click the button Select your Favicon image ...</summary>
 
-<h2 id="为什么选择-jekyll">为什么选择 Jekyll？</h2>
+  </entry>
 
-<ul>
-  <li>静态网站，速度快</li>
-  <li>支持 Markdown</li>
-  <li>免费部署到 GitHub Pages</li>
-</ul>
+  
+  <entry>
+    <title>Getting Started</title>
+    <link href="/posts/getting-started/" rel="alternate" type="text/html" title="Getting Started" />
+    <published>2019-08-09T20:55:00+08:00</published>
+  
+    <updated>2019-08-09T20:55:00+08:00</updated>
+  
+    <id>/posts/getting-started/</id>
+    <content type="text/html" src="/posts/getting-started/" />
+    <author>
+      <name>cotes</name>
+    </author>
 
-<blockquote>
-  <p>💡 小提示：Chirpy 主题支持代码高亮、数学公式、任务列表等增强功能。</p>
-</blockquote>
+  
+    
+    <category term="Blogging" />
+    
+    <category term="Tutorial" />
+    
+  
 
-<p>试试写代码：</p>
+  <summary>Get started with Chirpy basics in this comprehensive overview. You will learn how to install, configure, and use your first Chirpy-based website, as well as deploy it to a web server.</summary>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Hello, Chirpy!</span><span class="sh">"</span><span class="p">)</span>
-</code></pre></div></div>]]></content><author><name>tjoy</name></author><category term="Tutorial" /><category term="jekyll" /><category term="blog" /><summary type="html"><![CDATA[这是我的第一篇博客文章！]]></summary></entry></feed>
+  </entry>
+
+  
+  <entry>
+    <title>Writing a New Post</title>
+    <link href="/posts/write-a-new-post/" rel="alternate" type="text/html" title="Writing a New Post" />
+    <published>2019-08-08T14:10:00+08:00</published>
+  
+    <updated>2019-08-08T14:10:00+08:00</updated>
+  
+    <id>/posts/write-a-new-post/</id>
+    <content type="text/html" src="/posts/write-a-new-post/" />
+    <author>
+      <name>cotes</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="Tutorial" />
+    
+  
+
+  <summary>This tutorial will guide you how to write a post in the Chirpy template, and it’s worth reading even if you’ve used Jekyll before, as many features require specific variables to be set.  Naming and Path  Create a new file named YYYY-MM-DD-TITLE.EXTENSION and put it in the _posts of the root directory. Please note that the EXTENSION must be one of md and markdown. If you want to save time of cre...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Text and Typography</title>
+    <link href="/posts/text-and-typography/" rel="alternate" type="text/html" title="Text and Typography" />
+    <published>2019-08-08T11:33:00+08:00</published>
+  
+    <updated>2019-08-08T11:33:00+08:00</updated>
+  
+    <id>/posts/text-and-typography/</id>
+    <content type="text/html" src="/posts/text-and-typography/" />
+    <author>
+      <name>cotes</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="Demo" />
+    
+  
+
+  <summary>Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.</summary>
+
+  </entry>
+
+</feed>
+
+
