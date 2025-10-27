@@ -98,7 +98,7 @@ async function fetchDailyQuoteWithJSONP() {
         cacheQuote(parsedData);
         return; // 成功获取，退出
       }
-    } catch (error) {
+    } catch {
       continue; // 尝试下一个API
     }
   }
@@ -127,16 +127,16 @@ function fetchWithJSONP(url) {
         if (script && script.parentNode) {
           script.parentNode.removeChild(script);
         }
-      } catch (error) {
-        // console.warn('清理script标签时出错:', error);
+      } catch {
+        // console.warn('清理script标签时出错');
       }
 
       try {
         if (window[callbackName]) {
           delete window[callbackName];
         }
-      } catch (error) {
-        // console.warn('清理回调函数时出错:', error);
+      } catch {
+        // console.warn('清理回调函数时出错');
       }
 
       if (timeoutId) {
@@ -171,57 +171,6 @@ function fetchWithJSONP(url) {
     script.src = `${url}${separator}callback=${callbackName}`;
     document.head.appendChild(script);
   });
-}
-
-/**
- * 获取每日一句数据（原始fetch方法，已废弃）
- */
-async function fetchDailyQuote() {
-  const quoteTextEl = document.getElementById('quote-text');
-  const quoteFromEl = document.getElementById('quote-from');
-
-  try {
-    // console.log('开始获取每日一句...');
-
-    const response = await fetch(
-      'https://whyta.cn/api/yiyan?key=738b541a5f7a',
-      {
-        method: 'GET',
-        mode: 'cors',
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json'
-        }
-      }
-    );
-
-    // console.log('API响应状态:', response.status);
-    // console.log('API响应头:', response.headers);
-
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-
-    const data = await response.json();
-    // console.log('API返回数据:', data);
-
-    // 显示每日一句
-    displayQuote(data);
-
-    // 缓存数据
-    cacheQuote(data);
-  } catch (error) {
-    //console.error('获取每日一句失败:', error);
-    //console.error('错误详情:', {
-    //   name: error.name,
-    //   message: error.message,
-    //   stack: error.stack
-    // });
-
-    // 显示错误信息
-    quoteTextEl.textContent = '今日无话可说，明日再续。';
-    quoteFromEl.textContent = '—— 系统';
-  }
 }
 
 /**
@@ -260,8 +209,8 @@ function cacheQuote(data) {
 
   try {
     localStorage.setItem('daily-quote', JSON.stringify(cacheData));
-  } catch (error) {
-    //console.warn('无法缓存每日一句数据:', error);
+  } catch {
+    //console.warn('无法缓存每日一句数据');
   }
 }
 
@@ -273,8 +222,8 @@ function getCachedQuote() {
   try {
     const cached = localStorage.getItem('daily-quote');
     return cached ? JSON.parse(cached) : null;
-  } catch (error) {
-    //console.warn('无法读取缓存的每日一句数据:', error);
+  } catch {
+    //console.warn('无法读取缓存的每日一句数据');
     return null;
   }
 }
