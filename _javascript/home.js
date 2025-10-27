@@ -1,8 +1,13 @@
 import { basic, initSidebar, initTopbar } from './modules/layouts';
-import { initLocaleDatetime, loadImg } from './modules/components';
+import {
+  initLocaleDatetime,
+  loadImg,
+  initDailyQuote
+} from './modules/components';
 
 loadImg();
 initLocaleDatetime();
 initSidebar();
 initTopbar();
+initDailyQuote();
 basic();

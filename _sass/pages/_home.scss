@@ -2,6 +2,74 @@
 @use '../abstracts/breakpoints' as bp;
 @use '../abstracts/placeholders';
 
+/* 每日一句样式 */
+#daily-quote {
+  background: linear-gradient(
+    135deg,
+    var(--card-bg-color) 0%,
+    rgba(var(--bs-primary-rgb), 0.05) 100%
+  );
+  border: 1px solid rgba(var(--bs-primary-rgb), 0.1);
+  border-radius: v.$radius-lg;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-body {
+    padding: 2rem 1.5rem;
+
+    @include bp.md {
+      padding: 2.5rem 2rem;
+    }
+  }
+
+  .quote-content {
+    position: relative;
+    margin-bottom: 1rem;
+
+    .quote-icon {
+      color: var(--bs-primary);
+      font-size: 1.2rem;
+      opacity: 0.6;
+
+      &:first-child {
+        margin-right: 0.5rem;
+      }
+
+      &:last-child {
+        margin-left: 0.5rem;
+      }
+    }
+
+    .quote-text {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: var(--text-color);
+      font-style: italic;
+      margin: 0;
+      padding: 0 1rem;
+
+      @include bp.md {
+        font-size: 1.2rem;
+        padding: 0 1.5rem;
+      }
+    }
+  }
+
+  .quote-meta {
+    margin-top: 0.5rem;
+
+    small {
+      font-size: 0.9rem;
+      color: var(--text-muted-color);
+    }
+  }
+}
+
 #post-list {
   margin-top: 2rem;
 
