@@ -497,45 +497,53 @@
 
 
 
+<!-- 每日一句 -->
+<div id="daily-quote" class="card-wrapper card mb-4">
+  <div class="card-body text-center">
+    <div class="quote-content">
+      <i class="fas fa-quote-left quote-icon"></i>
+      <p class="quote-text mb-2" id="quote-text">正在加载每日一句...</p>
+      <i class="fas fa-quote-right quote-icon"></i>
+    </div>
+    <div class="quote-meta">
+      <small class="text-muted" id="quote-from">—— 来源</small>
+    </div>
+  </div>
+</div>
 
-
-
+ 
 
 
 <!-- Get pinned posts on current page -->
 
-
-
-
-
+  
 
 <!-- Get normal posts on current page -->
 
-
-
-
+ 
 
 <div id="post-list" class="flex-grow-1 px-xl-1">
   
-    <article class="card-wrapper card">
-      <a href="/posts/customize-the-favicon/" class="post-preview row g-0 flex-md-row-reverse">
-        
+  <article class="card-wrapper card">
+    <a
+      href="/posts/NPS%E6%B5%81%E9%87%8F%E7%9B%91%E6%8E%A7%E5%8A%9F%E8%83%BD%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/"
+      class="post-preview row g-0 flex-md-row-reverse"
+    >
+       
 
-        
+      <div class="col-md-12">
+        <div class="card-body d-flex flex-column">
+          <h1 class="card-title my-2 mt-md-0">NPS流量监控功能源码阅读</h1>
 
-        <div class="col-md-12">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">Customize the Favicon</h1>
+          <div class="card-text content mt-0 mb-3">
+            <p>一，数据结构设计  type Flow struct { 	ExportFlow int64  //出口流量 	InletFlow  int64  //入口流量 	FlowLimit  int64  //流量限制 	sync.RWMutex      //读写锁保证并发安全 }  这个结构体会被嵌入Client、Tunnel、Host对象中，用于分别统计客户端、隧道和主机的流量     读写...</p>
+          </div>
 
-            <div class="card-text content mt-0 mb-3">
-              <p>评论测试 测试评论功能的实时性</p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
+          <div class="post-meta flex-grow-1 d-flex align-items-end">
+            <div class="me-auto">
+              <!-- posted date -->
+              <i class="far fa-calendar fa-fw me-1"></i>
+              <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -545,33 +553,196 @@
 
 <time
   
-  data-ts="1565454840"
+  data-ts="1761268846"
   data-df="YYYY/MM/DD"
   
 >
-  2019/08/11
+  2025/10/24
 </time>
 
 
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      测试,
-                      评论
-                  </span>
-                
-              </div>
-
+              <!-- categories -->
+              
+              <i class="far fa-folder-open fa-fw me-1"></i>
+              <span class="categories">
+                 工具, NPS
+              </span>
               
             </div>
-            <!-- .post-meta -->
+
+            
           </div>
-          <!-- .card-body -->
+          <!-- .post-meta -->
         </div>
-      </a>
-    </article>
+        <!-- .card-body -->
+      </div>
+    </a>
+  </article>
+  
+  <article class="card-wrapper card">
+    <a
+      href="/posts/React-18%E6%BA%90%E7%A0%81%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"
+      class="post-preview row g-0 flex-md-row-reverse"
+    >
+       
+
+      <div class="col-md-12">
+        <div class="card-body d-flex flex-column">
+          <h1 class="card-title my-2 mt-md-0">React 18源码学习笔记</h1>
+
+          <div class="card-text content mt-0 mb-3">
+            <p>第一章 基础概念 一.虚拟DOM 1.什么是虚拟DOM 虚拟DOM是js对象，是对真实DOM的抽象表示：  const virtualDOM = { 	type: "div", 	props: { 		className: "container", 		childiren: [ 			{ 				type: "h1", 				props: { 					children: "Hello W...</p>
+          </div>
+
+          <div class="post-meta flex-grow-1 d-flex align-items-end">
+            <div class="me-auto">
+              <!-- posted date -->
+              <i class="far fa-calendar fa-fw me-1"></i>
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1760377246"
+  data-df="YYYY/MM/DD"
+  
+>
+  2025/10/14
+</time>
+
+
+              <!-- categories -->
+              
+              <i class="far fa-folder-open fa-fw me-1"></i>
+              <span class="categories">
+                 前端, React
+              </span>
+              
+            </div>
+
+            
+          </div>
+          <!-- .post-meta -->
+        </div>
+        <!-- .card-body -->
+      </div>
+    </a>
+  </article>
+  
+  <article class="card-wrapper card">
+    <a
+      href="/posts/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"
+      class="post-preview row g-0 flex-md-row-reverse"
+    >
+       
+
+      <div class="col-md-12">
+        <div class="card-body d-flex flex-column">
+          <h1 class="card-title my-2 mt-md-0">go语言学习笔记</h1>
+
+          <div class="card-text content mt-0 mb-3">
+            <p>go语言学习笔记 一.go的优点 1.简化c++，简化开发流程 2.对于java的spring，go的gin启动速度更快 二.go的语法 导入与导出 导入 import { 	//目标文件的路径 }  导出 func名字的首字母为大写则可被其它文件调用，小写则只能被当前文件内调用 变量 定义 i := 2 var i = 2 var i int = 2  上述三种赋值方法是等价的 类型 //...</p>
+          </div>
+
+          <div class="post-meta flex-grow-1 d-flex align-items-end">
+            <div class="me-auto">
+              <!-- posted date -->
+              <i class="far fa-calendar fa-fw me-1"></i>
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1760377246"
+  data-df="YYYY/MM/DD"
+  
+>
+  2025/10/14
+</time>
+
+
+              <!-- categories -->
+              
+              <i class="far fa-folder-open fa-fw me-1"></i>
+              <span class="categories">
+                 后端, go
+              </span>
+              
+            </div>
+
+            
+          </div>
+          <!-- .post-meta -->
+        </div>
+        <!-- .card-body -->
+      </div>
+    </a>
+  </article>
+  
+  <article class="card-wrapper card">
+    <a
+      href="/posts/es6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"
+      class="post-preview row g-0 flex-md-row-reverse"
+    >
+       
+
+      <div class="col-md-12">
+        <div class="card-body d-flex flex-column">
+          <h1 class="card-title my-2 mt-md-0">es6学习笔记</h1>
+
+          <div class="card-text content mt-0 mb-3">
+            <p>es6语法笔记 1.变量let与常量const { 	let count = 10 } console.log(count)//无法读取变量count  const a = 1 a = 0//此行代码无法执行  2.模板字符串 const str1 = 'abc' + "def" const str2 = `hij${str1} 				  这个字符串还能带换行效果 			 `  3.解构赋...</p>
+          </div>
+
+          <div class="post-meta flex-grow-1 d-flex align-items-end">
+            <div class="me-auto">
+              <!-- posted date -->
+              <i class="far fa-calendar fa-fw me-1"></i>
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1737204852"
+  data-df="YYYY/MM/DD"
+  
+>
+  2025/01/18
+</time>
+
+
+              <!-- categories -->
+              
+              <i class="far fa-folder-open fa-fw me-1"></i>
+              <span class="categories">
+                 前端, js
+              </span>
+              
+            </div>
+
+            
+          </div>
+          <!-- .post-meta -->
+        </div>
+        <!-- .card-body -->
+      </div>
+    </a>
+  </article>
   
 </div>
 <!-- #post-list -->
@@ -608,7 +779,28 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/customize-the-favicon/">Customize the Favicon</a>
+          <a href="/posts/NPS%E6%B5%81%E9%87%8F%E7%9B%91%E6%8E%A7%E5%8A%9F%E8%83%BD%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/">NPS流量监控功能源码阅读</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">go语言学习笔记</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/React-18%E6%BA%90%E7%A0%81%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">React 18源码学习笔记</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/es6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">es6学习笔记</a>
         </li>
       
     </ul>
@@ -637,6 +829,138 @@
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
       
         
         
@@ -648,7 +972,22 @@
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AF%84%E8%AE%BA/">评论</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E6%BA%90%E7%A0%81/">源码</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/es6/">es6</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/go/">go</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/nps/">NPS</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/react/">React</a>
       
     </div>
   </section>
@@ -730,6 +1069,138 @@
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
       
         
         
@@ -741,7 +1212,22 @@
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AF%84%E8%AE%BA/">评论</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E6%BA%90%E7%A0%81/">源码</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/es6/">es6</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/go/">go</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/nps/">NPS</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/react/">React</a>
       
     </div>
   </section>

@@ -4,7 +4,7 @@
   <id>https://tianyu0604.github.io/</id>
   <title>天宇的垃圾堆</title>
   <subtitle>一未知大学生的学习笔记</subtitle>
-  <updated>2025-10-19T19:57:14+08:00</updated>
+  <updated>2025-10-27T22:58:47+08:00</updated>
   <author>
     <name>tjoy</name>
     <uri>https://tianyu0604.github.io/</uri>
@@ -20,27 +20,105 @@
 
   
   <entry>
-    <title>Customize the Favicon</title>
-    <link href="https://tianyu0604.github.io/posts/customize-the-favicon/" rel="alternate" type="text/html" title="Customize the Favicon" />
-    <published>2019-08-11T00:34:00+08:00</published>
+    <title>NPS流量监控功能源码阅读</title>
+    <link href="https://tianyu0604.github.io/posts/NPS%E6%B5%81%E9%87%8F%E7%9B%91%E6%8E%A7%E5%8A%9F%E8%83%BD%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/" rel="alternate" type="text/html" title="NPS流量监控功能源码阅读" />
+    <published>2025-10-24T09:20:46+08:00</published>
   
-    <updated>2019-08-11T00:34:00+08:00</updated>
+    <updated>2025-10-24T09:20:46+08:00</updated>
   
-    <id>https://tianyu0604.github.io/posts/customize-the-favicon/</id>
-    <content type="text/html" src="https://tianyu0604.github.io/posts/customize-the-favicon/" />
+    <id>https://tianyu0604.github.io/posts/NPS%E6%B5%81%E9%87%8F%E7%9B%91%E6%8E%A7%E5%8A%9F%E8%83%BD%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/</id>
+    <content type="text/html" src="https://tianyu0604.github.io/posts/NPS%E6%B5%81%E9%87%8F%E7%9B%91%E6%8E%A7%E5%8A%9F%E8%83%BD%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/" />
     <author>
-      <name>cotes</name>
+      <name>tjoy</name>
     </author>
 
   
     
-    <category term="测试" />
+    <category term="工具" />
     
-    <category term="评论" />
+    <category term="NPS" />
     
   
 
-  <summary>评论测试 测试评论功能的实时性</summary>
+  <summary>一，数据结构设计  type Flow struct { 	ExportFlow int64  //出口流量 	InletFlow  int64  //入口流量 	FlowLimit  int64  //流量限制 	sync.RWMutex      //读写锁保证并发安全 }  这个结构体会被嵌入Client、Tunnel、Host对象中，用于分别统计客户端、隧道和主机的流量     读写锁sync.RWMutex        读操作可并行，不会有安全隐患     写操作不可并行，多个写操作同时进行可能同时从内存取出同样的值，自增并写入新值，发生数据竞争的问题      二，流量监控核心机制 连接级别的流量统计 //位于lib/goroutine/pool.go func copyConns(group interface{}) {     conns := group.(Con...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>React 18源码学习笔记</title>
+    <link href="https://tianyu0604.github.io/posts/React-18%E6%BA%90%E7%A0%81%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="alternate" type="text/html" title="React 18源码学习笔记" />
+    <published>2025-10-14T01:40:46+08:00</published>
+  
+    <updated>2025-10-14T01:40:46+08:00</updated>
+  
+    <id>https://tianyu0604.github.io/posts/React-18%E6%BA%90%E7%A0%81%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+    <content type="text/html" src="https://tianyu0604.github.io/posts/React-18%E6%BA%90%E7%A0%81%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
+    <author>
+      <name>tjoy</name>
+    </author>
+
+  
+    
+    <category term="前端" />
+    
+    <category term="React" />
+    
+  
+
+  <summary>第一章 基础概念 一.虚拟DOM 1.什么是虚拟DOM 虚拟DOM是js对象，是对真实DOM的抽象表示：  const virtualDOM = { 	type: "div", 	props: { 		className: "container", 		childiren: [ 			{ 				type: "h1", 				props: { 					children: "Hello World", 				}, 			}, 		], 	};  可以体现出react的设计哲学 2.虚拟DOM工作流程    状态变化   生成新的虚拟DOM   Diff比较   计算最小更新   批量更新真实DOM     二.JSX     1.什么是JSX     jsx是js的语法扩展，允许在js中写HTML样的代码     2.JSX的编译（Babel转换）     ```js // js...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>go语言学习笔记</title>
+    <link href="https://tianyu0604.github.io/posts/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="alternate" type="text/html" title="go语言学习笔记" />
+    <published>2025-10-14T01:40:46+08:00</published>
+  
+    <updated>2025-10-14T01:40:46+08:00</updated>
+  
+    <id>https://tianyu0604.github.io/posts/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+    <content type="text/html" src="https://tianyu0604.github.io/posts/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
+    <author>
+      <name>tjoy</name>
+    </author>
+
+  
+    
+    <category term="后端" />
+    
+    <category term="go" />
+    
+  
+
+  <summary>go语言学习笔记 一.go的优点 1.简化c++，简化开发流程 2.对于java的spring，go的gin启动速度更快 二.go的语法 导入与导出 导入 import { 	//目标文件的路径 }  导出 func名字的首字母为大写则可被其它文件调用，小写则只能被当前文件内调用 变量 定义 i := 2 var i = 2 var i int = 2  上述三种赋值方法是等价的 类型 // int int8 int16 int32 int64 整型 // uint uint8 uint32 uint64 uintptr（无符号整型指针） 无符号型 // float32 float64 complex64 complex128 浮点型 // bool string byte rune 其他  类型转换  i := float64(6)  数组  var a [2]string  a[...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>es6学习笔记</title>
+    <link href="https://tianyu0604.github.io/posts/es6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="alternate" type="text/html" title="es6学习笔记" />
+    <published>2025-01-18T20:54:12+08:00</published>
+  
+    <updated>2025-01-18T20:54:12+08:00</updated>
+  
+    <id>https://tianyu0604.github.io/posts/es6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+    <content type="text/html" src="https://tianyu0604.github.io/posts/es6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
+    <author>
+      <name>tjoy</name>
+    </author>
+
+  
+    
+    <category term="前端" />
+    
+    <category term="js" />
+    
+  
+
+  <summary>es6语法笔记 1.变量let与常量const { 	let count = 10 } console.log(count)//无法读取变量count  const a = 1 a = 0//此行代码无法执行  2.模板字符串 const str1 = 'abc' + "def" const str2 = `hij${str1} 				  这个字符串还能带换行效果 			 `  3.解构赋值 //数组解构 const [a,b,c] = [1,2,3] console.log(a)  //对象解构 const {username, age:userAge, ...otherInfo} = { 		username = 'tianyu', 		age = 18, 		x = 1, 		y = 2, 		z = 3 	} console.log(username,userAge,oth...</summary>
 
   </entry>
 
